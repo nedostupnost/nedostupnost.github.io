@@ -8,22 +8,23 @@
 		<title>What’s up, people!</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="header">
-				<div class="nav">
-					<a href="#" id="link1">Fuck sucker</a>
-					<a href="#" id="link2">meow</a>
-					<a href="#" id="link3">Suicide Happy Holiday</a>
-				</div>
-			</div>
+		<div class="page">
+			<header class="page__header header">
+				<nav class="header__nav nav">
+					<a href="#" id="link1" class="nav__link">Fuck sucker</a>
+					<a href="#" id="link2" class="nav__link">meow</a>
+					<a href="#" id="link3" class="nav__link">Suicide Happy Holiday</a>
+				</nav>
+			</header>
 
-			<div class="main">
-				<div class="image-container">
-					<img src="assets/pic2.webp" alt="Limg" />
-					<div class="text-content">
-						<h1>What’s up, people!</h1>
+			<main class="page__main main">
+				<div class="main__image-container image-container">
+					<img src="assets/pic2.webp" alt="Limg" class="image-container__img" />
+					<div class="image-container__text-content text-content">
+						<h1 class="text-content__title">What’s up, people!</h1>
 						<p
 							id="text1"
+							class="text-content__paragraph"
 							onmouseover="highlightText('text1')"
 							onmouseout="removeHighlight('text1')"
 						>
@@ -31,6 +32,7 @@
 						</p>
 						<p
 							id="text2"
+							class="text-content__paragraph"
 							onmouseover="highlightText('text2')"
 							onmouseout="removeHighlight('text2')"
 						>
@@ -42,85 +44,87 @@
 							allowfullscreen="true"
 							width="100%"
 							height="300px"
-							style="display: block"
+							class="text-content__map"
 						></iframe>
 					</div>
-					<img src="assets/pic1.webp" alt="Rimg" />
+					<img src="assets/pic1.webp" alt="Rimg" class="image-container__img" />
 				</div>
 
 				<div id="table-modal" class="modal">
-					<div class="modal-content">
-						<span class="close-button">&times;</span>
-						<table>
+					<div class="modal__content">
+						<span class="modal__close-button">&times;</span>
+						<table class="modal__table">
 							<tr>
-								<th colspan="4">
+								<th colspan="4" class="modal__table-header">
 									Инцидент с макеевским родничком - 7 сетнября 2022 год
 								</th>
 							</tr>
 							<tr>
-								<th>Стороны</th>
-								<th>Командующие</th>
-								<th>Силы сторон</th>
-								<th>Потери</th>
+								<th class="modal__table-header">Стороны</th>
+								<th class="modal__table-header">Командующие</th>
+								<th class="modal__table-header">Силы сторон</th>
+								<th class="modal__table-header">Потери</th>
 							</tr>
 							<tr>
-								<td>Украина, ЛНР</td>
-								<td>С. Рунов</td>
-								<td>1 тварь</td>
-								<td>отсутствует</td>
+								<td class="modal__table-data">Украина, ЛНР</td>
+								<td class="modal__table-data">С. Рунов</td>
+								<td class="modal__table-data">1 тварь</td>
+								<td class="modal__table-data">отсутствует</td>
 							</tr>
 							<tr>
-								<td>Россия, ДНР</td>
-								<td>И. Гиркин</td>
-								<td>неизвестно</td>
-								<td>родничок</td>
+								<td class="modal__table-data">Россия, ДНР</td>
+								<td class="modal__table-data">И. Гиркин</td>
+								<td class="modal__table-data">неизвестно</td>
+								<td class="modal__table-data">родничок</td>
 							</tr>
 						</table>
-						<img
-							src="assets/mack.webp"
-							alt="New Image"
-							style="margin-top: 20px; width: 100%"
-						/>
+						<img src="assets/mack.webp" alt="New Image" class="modal__image" />
 					</div>
 				</div>
 
 				<div id="fuck-modal" class="modal">
-					<div class="modal-content">
-						<span class="close-button">&times;</span>
-						<img src="assets/svo.webp" alt="Fuck Sucker" />
+					<div class="modal__content">
+						<span class="modal__close-button">&times;</span>
+						<img src="assets/svo.webp" alt="Fuck Sucker" class="modal__image" />
 					</div>
 				</div>
-				<audio id="fuck-sound">
+				<audio id="fuck-sound" class="audio">
 					<source src="assets/svo.mp3" type="audio/mpeg" />
 				</audio>
 
 				<div id="suicide-modal" class="modal">
-					<div class="modal-content">
-						<span class="close-button">&times;</span>
-						<img src="assets/nsk.webp" alt="Suicide Happy Holiday" />
+					<div class="modal__content">
+						<span class="modal__close-button">&times;</span>
+						<img
+							src="assets/nsk.webp"
+							alt="Suicide Happy Holiday"
+							class="modal__image"
+						/>
 					</div>
 				</div>
-				<audio id="suicide-sound">
+				<audio id="suicide-sound" class="audio">
 					<source src="assets/rand.mp3" type="audio/mpeg" />
 				</audio>
 
 				<div id="cat-modal" class="modal">
-					<div class="modal-content">
-						<span class="close-button">&times;</span>
-						<img src="assets/cat.webp" alt="Cat" />
+					<div class="modal__content">
+						<span class="modal__close-button">&times;</span>
+						<img src="assets/cat.webp" alt="Cat" class="modal__image" />
 					</div>
 				</div>
-				<audio id="cat-sound">
+				<audio id="cat-sound" class="audio">
 					<source src="assets/meow.mp3" type="audio/mpeg" />
 				</audio>
-			</div>
+			</main>
 
-			<div class="footer">
-				<p>ПРОДАМ ГАРАЖ</p>
-				<div class="nav">
-					<a href="mailto:darkvorontv@gmail.com">darkvorontv@gmail.com</a>
-				</div>
-			</div>
+			<footer class="page__footer footer">
+				<p class="footer__text">ПРОДАМ ГАРАЖ</p>
+				<nav class="footer__nav nav">
+					<a href="mailto:darkvorontv@gmail.com" class="nav__link"
+						>darkvorontv@gmail.com</a
+					>
+				</nav>
+			</footer>
 		</div>
 		<script src="script.js"></script>
 	</body>

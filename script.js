@@ -1,9 +1,13 @@
 function highlightText(id) {
-	document.getElementById(id).classList.add('highlight')
+	document
+		.getElementById(id)
+		.classList.add('text-content__paragraph--highlight')
 }
 
 function removeHighlight(id) {
-	document.getElementById(id).classList.remove('highlight')
+	document
+		.getElementById(id)
+		.classList.remove('text-content__paragraph--highlight')
 }
 
 var modals = {
@@ -40,7 +44,7 @@ for (var key in modals) {
 			}
 		}
 
-		var closeButton = modal.getElementsByClassName('close-button')[0]
+		var closeButton = modal.getElementsByClassName('modal__close-button')[0]
 		closeButton.onclick = function () {
 			modal.style.display = 'none'
 			if (audio) {
@@ -61,7 +65,7 @@ for (var key in modals) {
 	})(key)
 }
 
-var pic2 = document.querySelector('.image-container img:nth-child(1)')
+var pic2 = document.querySelector('.image-container__img:nth-child(1)')
 pic2.onclick = function (event) {
 	event.preventDefault()
 	modals.pic2.modal.style.display = 'block'
@@ -69,7 +73,7 @@ pic2.onclick = function (event) {
 
 var closeButtonTable = document
 	.getElementById('table-modal')
-	.getElementsByClassName('close-button')[0]
+	.getElementsByClassName('modal__close-button')[0]
 closeButtonTable.onclick = function () {
 	document.getElementById('table-modal').style.display = 'none'
 }

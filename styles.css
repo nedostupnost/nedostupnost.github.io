@@ -1,4 +1,4 @@
-body {
+.page {
 	display: flex;
 	flex-direction: column;
 	background-image: url('assets/back.webp');
@@ -8,27 +8,27 @@ body {
 	height: 100vh;
 }
 
-main {
+.page__main {
 	flex: 1;
 }
 
-.highlight {
+.text-content__paragraph--highlight {
 	color: hotpink;
 }
 
-h1 {
+.text-content__title {
 	font-size: 60px;
 	color: rgb(251, 190, 199);
 	text-align: center;
 }
 
-p {
+.text-content__paragraph {
 	font-size: 30px;
 	color: white;
 	text-align: center;
 }
 
-a {
+.nav__link {
 	font-size: 20px;
 	color: brown;
 }
@@ -70,7 +70,7 @@ a {
 	padding: 20px;
 }
 
-.image-container img {
+.image-container__img {
 	width: 300px;
 	height: auto;
 }
@@ -87,7 +87,7 @@ a {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modal__content {
 	background-color: black;
 	margin: 5% auto;
 	padding: 20px;
@@ -98,34 +98,35 @@ a {
 	overflow: hidden;
 	position: relative;
 }
-.close-button {
+
+.modal__close-button {
 	color: crimson;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
 }
 
-.close-button:hover,
-.close-button:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.modal-content img {
+.modal__image {
 	width: 100%;
 	height: auto;
 	max-height: 80vh;
 	object-fit: contain;
 }
 
-table {
+.modal__table {
 	width: 100%;
 	border-collapse: collapse;
 	color: white;
 }
 
-th {
+.modal__table-header {
 	padding: 20px;
 	font-weight: bold;
 	color: rgb(255, 255, 255);
@@ -133,7 +134,7 @@ th {
 	border-bottom: 1px solid crimson;
 }
 
-td {
+.modal__table-data {
 	padding: 10px;
 	text-align: left;
 	border-bottom: 1px solid crimson;
